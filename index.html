@@ -1,46 +1,90 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
-    <script src="./scripts/set-theme.js"></script>
-  </head>
-  <body class="page">
-    <header class="header">
-      <nav class="theme-menu header__theme-menu">
-        <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
-        <ul class="theme-menu__list">
-          <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
-              Темно
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button
-              type="button"
-              data-theme="auto"
-              disabled
-              class="theme-menu__button"
-            >
-              Авто
-            </button>
-          </li>
-          <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
-              Светло
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light">
+
+  <title>Закрывающий тег</title>
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+  <link rel="stylesheet" href="./styles/themes.css" />
+
+  <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/mobile-icon.png">
+
+  <script src="./scripts/set-theme.js"></script>
+</head>
+
+<body class="page">
+  <header class="header block-center content-width">
+    <h1 class="title">&lt;/HTML&gt;</h1>
+    <h2 class="header__subtitle">закрывающий тег</h2>
+    <nav class="theme-menu header__theme-menu">
+      <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
+      <ul class="theme-menu__list">
+        <li class="theme-menu__item">
+          <button type="button" data-theme="dark" class="theme-menu__button">
+            Темно
+          </button>
+        </li>
+        <li class="theme-menu__item">
+          <button type="button" data-theme="auto" disabled class="theme-menu__button">
+            Авто
+          </button>
+        </li>
+        <li class="theme-menu__item">
+          <button type="button" data-theme="light" class="theme-menu__button">
+            Светло
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="sprints">
+      <ul class="sprints__list content-width">
+        <li class="sprints__item">
+          <article class="card">
+            <h3 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h3>
+            <img src="./images/card-image.png" alt="Нулевой спринт" class="card-img">
+            <div class="card__content-block">
+              <p class="card__text-content">
+                Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И,
+                возможно, подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p class="card__text-content">
+                Место для ваших воспоминаний о начале обучения.
+              </p>
+            </div>
+            <div class="button-block">
+              <button class="card-button card__like-button">
+                <svg class="like-icon card__icon-button card__like-button">
+                  <path
+                    d="M3 0h3v3H3V0zM6 0h3v3H6V0zM0 3h3v3H0V3zM0 6h3v3H0V6zM0 9h3v3H0V9zM9 0h3v3H9V0zM3 12h3v3H3v-3zM6 15h3v3H6v-3zM9 18h3v3H9v-3zM24 0h-3v3h3V0zM21 0h-3v3h3V0zM27 3h-3v3h3V3zM27 6h-3v3h3V6zM27 9h-3v3h3V9zM18 0h-3v3h3V0zM24 12h-3v3h3v-3zM21 15h-3v3h3v-3zM18 18h-3v3h3v-3zM12 3h3v3h-3V3zM12 21h3v3h-3v-3z"
+                    fill-rule="evenodd" />
+                </svg>
+                <span class="button__text card__like-text-wrapper">Like</span>
+              </button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <button class="save-button">
+      <svg class="floppy-ico">
+        <use href="./svg/floppy.svg#floppy"></use>
+      </svg>
+      <span class="button__text save-text">Сохранить на память</span>
+    </button>
+  </footer>
+  <script src="./scripts/like.js"></script>
+</body>
+
 </html>
