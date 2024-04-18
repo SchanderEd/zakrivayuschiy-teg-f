@@ -12,4 +12,7 @@
   --card-text-fw: 400;
   --text-stroke-color: #000;
   --color-for-mix-blended: #00CC14;
+  --heart-contour: #00CC14;
+  --fill-sparks-heart: #FF0000;
+  --fill-body-heart: none;
 }
