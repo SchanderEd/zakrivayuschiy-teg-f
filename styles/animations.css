@@ -21,6 +21,34 @@
   }
 }
 
+@keyframes scalingHeart {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes blinkSparkling {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .theme-menu__button {
   transition: all .3s ease;
 }
@@ -77,43 +105,15 @@
   transition-delay: .05s;
 }
 
-@keyframes scalingHeart {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes blinkSparkling {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
 .is-liked>.heart {
   transform-origin: center;
-  animation: scalingHeart .5s ease-in;
+  animation: ease-in scalingHeart;
   animation-delay: .1s;
   animation-duration: .3s;
 }
 
 .is-liked>.sparks {
-  animation: blinkSparkling .3s ease-in;
+  animation: ease-in blinkSparkling;
   animation-delay: .3s;
   animation-duration: .3s;
 }
