@@ -4,6 +4,22 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font-fw: 400, 700;
+    --repeating-right-gradient: repeating-linear-gradient(to right, #d3d3d3, transparent 2px);
+    --repeating-bottom-gradient: repeating-linear-gradient(to bottom, #d3d3d3, transparent 2px);
+    --linear-gradient: linear-gradient(#e7e7e7,#1a1a1a);
+    --bg-color: #fff;
+    --accent-color: #000;
+    --card-heading-fw: 700;
+    --text-stroke-color: #fff;
+    --color-for-mix-blended: #fff;
+    --heart-contour: #000;
+    --fill-sparks-heart: #FF0000;
+  }
+}
+
 :root.theme-light {
   --main-font-fw: 400, 700;
   --repeating-right-gradient: repeating-linear-gradient(to right, #d3d3d3, transparent 2px);
@@ -15,5 +31,22 @@
   --text-stroke-color: #fff;
   --color-for-mix-blended: #fff;
   --heart-contour: #000;
+  --fill-sparks-heart: #FF0000;
+}
+
+:root.theme-dark {
+  --repeating-right-gradient: repeating-linear-gradient(to right, #000, transparent 2px);
+  --repeating-bottom-gradient: repeating-linear-gradient(to bottom, #000, transparent 2px);
+  --linear-gradient: linear-gradient(#007f0c,#004306);
+  --bg-color: #000;
+  --accent-color: #00CC14;
+  --main-font: 'Inter-Variable', sans-serif;
+  --main-font-fw: 400, 800;
+  --accent-font: 'PressStart2P', sans-serif;
+  --card-heading-fw: 800;
+  --card-text-fw: 400;
+  --text-stroke-color: #000;
+  --color-for-mix-blended: #00CC14;
+  --heart-contour: #00CC14;
   --fill-sparks-heart: #FF0000;
 }

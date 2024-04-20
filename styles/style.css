@@ -22,7 +22,7 @@
 }
 
 .page {
-  padding: 102px 2px;
+  padding: 102px 0;
   color: var(--accent-color);
   font-family: var(--main-font);
   background-image: var(--repeating-right-gradient), var(--repeating-bottom-gradient), var(--linear-gradient);
