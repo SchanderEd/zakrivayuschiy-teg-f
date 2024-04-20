@@ -29,9 +29,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  min-inline-size: 320px;
+  min-inline-size: 375px;
   min-block-size: 100dvb;
-  font-variation-settings: 'wdth'var(--main-font-fw);
+  font-variation-settings: 'wqht'var(--main-font-fw);
 }
 
 .header {
@@ -149,6 +149,7 @@
   position: absolute;
   top: 25px;
   right: 23px;
+  z-index: 1;
   opacity: .6;
   font-family: var(--accent-font);
   font-size: 14px;
@@ -158,7 +159,6 @@
     1px 0 var(--text-stroke-color),
     0 -1px var(--text-stroke-color);
   mix-blend-mode: hard-light;
-  z-index: 1;
 }
 
 @supports((text-stroke: 1px var(--text-stroke-color)) or (-webkit-text-stroke: 1px var(--text-stroke-color))) {
@@ -343,15 +343,15 @@
 }
 
 .modal {
-  display: flex;
-  flex-direction: column;
   position: fixed;
   inset: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 357px;
+  border: 2px solid var(--accent-color);
   padding: 30px;
   background-color: var(--bg-color);
-  max-width: 357px;
   transition: opacity 0.3s ease-in-out;
-  border: 2px solid var(--accent-color);
 }
 
 .modal:not([open]) {
@@ -360,14 +360,14 @@
 }
 
 .modal::backdrop {
-  background: #000;
   opacity: 0.75;
+  background: #000;
 }
 
 .modal__text-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -379,21 +379,21 @@
 }
 
 .modal__text {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: var(--accent-font);
   color: var(--accent-color);
+  font-family: var(--accent-font);
+  font-size: 14px;
   line-height: 150%;
+  text-transform: uppercase;
 }
 
 .modal__close-btn {
   width: 100%;
-  background-color: var(--bg-color);
-  text-transform: uppercase;
-  font-family: var(--accent-font);
-  padding: 9px 0;
-  cursor: pointer;
   border: 2px solid var(--accent-color);
+  padding: 9px 0;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  background-color: var(--bg-color);
+  cursor: pointer;
 }
 
 .modal__close-btn:focus {
