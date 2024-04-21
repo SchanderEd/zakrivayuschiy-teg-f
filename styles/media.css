@@ -1,11 +1,11 @@
 @media (max-width: 768px) {
   .header {
-    min-height: 327px;
-    padding-bottom: 25px;
+    padding-top: 7.4em;
+    padding-bottom: 23px;
   }
 
   .title {
-    margin-bottom: 20px;
+    margin-bottom: 2px;
   }
 
   .header__subtitle {
@@ -17,7 +17,7 @@
   }
 
   .sprints {
-    margin-block-start: 95px;
+    margin-block-start: 97px;
   }
 
   .sprints__list {

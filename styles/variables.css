@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --repeating-right-gradient: repeating-linear-gradient(to right, #000, transparent 2px);
-  --repeating-bottom-gradient: repeating-linear-gradient(to bottom, #000, transparent 2px);
+  --repeating-right-gradient: repeating-linear-gradient(to right, #000, transparent 4px);
+  --repeating-bottom-gradient: repeating-linear-gradient(to bottom, #000, transparent 4px);
   --linear-gradient: linear-gradient(#007f0c,#004306);
   --bg-color: #000;
   --accent-color: #00CC14;
@@ -14,5 +14,4 @@
   --color-for-mix-blended: #00CC14;
   --heart-contour: #00CC14;
   --fill-sparks-heart: #FF0000;
-  --fill-body-heart: none;
 }
