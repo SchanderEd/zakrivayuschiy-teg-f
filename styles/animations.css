@@ -88,12 +88,9 @@
   transition: fill .3s linear;
 }
 
-.card__icon-button>.like-icon:hover>.heart>.main-body {
-  transition-delay: .05s;
-}
-
 .like-icon.is-liked .contour {
   transition-delay: .06s;
+  fill: var(--fill-sparks-heart, #FF0000);
 }
 
 .like-icon.is-liked .main-body {
@@ -123,6 +120,7 @@
 
 .card__icon-button>.like-icon:hover>.heart>.main-body {
   fill: var(--heart-contour, #00CC14);
+  transition-delay: .05s;
 }
 
 .card__icon-button>.like-icon:active>.heart>.core {
@@ -134,10 +132,6 @@
 }
 
 .like-icon.is-liked .core, .like-icon.is-liked .main-body {
-  fill: var(--fill-sparks-heart, #FF0000);
-}
-
-.like-icon.is-liked .contour {
   fill: var(--fill-sparks-heart, #FF0000);
 }
 
