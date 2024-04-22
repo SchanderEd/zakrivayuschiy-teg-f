@@ -9,7 +9,7 @@
     --main-font-fw: 400, 700;
     --repeating-right-gradient: repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px);
     --repeating-bottom-gradient: repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px);
-    --linear-gradient: linear-gradient(#e7e7e7,#1a1a1a);
+    --linear-gradient: linear-gradient(to bottom,#e7e7e7,#1a1a1a);
     --bg-color: #fff;
     --accent-color: #000;
     --card-heading-fw: 700;
@@ -23,7 +23,7 @@
   --main-font-fw: 400, 700;
   --repeating-right-gradient: repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px);
   --repeating-bottom-gradient: repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px);
-  --linear-gradient: linear-gradient(#e7e7e7,#1a1a1a);
+  --linear-gradient: linear-gradient(to bottom, #e7e7e7,#1a1a1a);
   --bg-color: #fff;
   --accent-color: #000;
   --card-heading-fw: 700;
@@ -35,7 +35,7 @@
 :root.theme-dark {
   --repeating-right-gradient: repeating-linear-gradient(to right, #000, #000 2px, transparent 2px, transparent 4px);
   --repeating-bottom-gradient: repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px, transparent 4px);
-  --linear-gradient: linear-gradient(#007f0c,#004306);
+  --linear-gradient: linear-gradient(to bottom, #007f0c,#004306);
   --bg-color: #000;
   --accent-color: #00CC14;
   --main-font-fw: 400, 800;
