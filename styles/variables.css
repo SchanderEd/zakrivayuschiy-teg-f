@@ -1,8 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --repeating-right-gradient: repeating-linear-gradient(to right, #000, transparent 4px);
-  --repeating-bottom-gradient: repeating-linear-gradient(to bottom, #000, transparent 4px);
-  --linear-gradient: linear-gradient(#007f0c,#004306);
+  --repeating-right-gradient: repeating-linear-gradient(to right, #000, #000 2px, transparent 2px, transparent 4px);
+  --repeating-bottom-gradient: repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px, transparent 4px);
+  --linear-gradient: linear-gradient(to bottom, #007f0c,#004306);
   --bg-color: #000;
   --accent-color: #00CC14;
   --main-font: 'Inter-Variable', sans-serif;
