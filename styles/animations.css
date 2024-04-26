@@ -103,15 +103,11 @@
 
 .is-liked>.heart {
   transform-origin: center;
-  animation: ease-in scalingHeart alternate;
-  animation-delay: .1s;
-  animation-duration: .3s;
+  animation: scalingHeart .3s ease-in 1 alternate;
 }
 
 .is-liked>.sparks {
-  animation: ease-in blinkSparkling alternate;
-  animation-delay: .3s;
-  animation-duration: .3s;
+  animation: ease-in .3s .3s blinkSparkling alternate;
 }
 
 .card__icon-button>.like-icon:hover>.heart>.core {
